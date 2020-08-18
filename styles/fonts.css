@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Pacifico';
+  src: url(../fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+  font-family: 'Palatino Linotype';
+  src: url(../fonts/PALA.TTF);
+}
+@font-face {
+  font-family: 'Palatino Linotype';
+  font-weight: bold ;
+  src: url(../fonts/PALAB.TTF);
+}
+@font-face {
+  font-family: 'Palatino Linotype';
+  font-weight: bold;
+  font-style: italic;
+  src: url(../fonts/PALABI.TTF);
+}
+@font-face {
+  font-family: 'Palatino Linotype';
+  font-style: italic;
+  src: url(../fonts/PALAI.TTF);
+}
+@font-face {
+  font-family: 'Formula Condensed';
+  font-style: italic;
+  src: url(../fonts/FORMULACONDENSED-REGULAR.OTF);
+}
