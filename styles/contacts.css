@@ -1,0 +1,159 @@
+@import url('fonts.css');
+
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+  background: repeating-linear-gradient(-60deg, rgba(45, 211, 18, 0.2) 0 35px, transparent 35px 55px);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 60%;
+  margin: auto;
+}
+
+h1 {
+  font: 11vw 'Rude';
+  text-align: center;
+}
+
+p {
+  font: bold 2.3vw 'Argesta';
+  position: absolute;
+  bottom: 3.7%;
+  left: 43%;
+}
+
+.cake {
+  background: url('../assets/media/images/cake.png') center/contain no-repeat;
+  height: 100%;
+}
+
+.cake-wrapper {
+  height: 57vh;
+}
+
+@keyframes lightSpeedInLeft {
+  0% {
+    transform: translate3d(-200%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+  60% {
+    transform: skewX(-20deg);
+    opacity: 1;
+  }
+  80% {
+    transform: skewX(5deg);
+  }
+  to {
+    transform: translateZ(0);
+  }
+}
+.animate__lightSpeedInLeft {
+  animation-name: lightSpeedInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+@keyframes lightSpeedInRight {
+  0% {
+    transform: translate3d(200%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+  60% {
+    transform: skewX(-20deg);
+    opacity: 1;
+  }
+  80% {
+    transform: skewX(5deg);
+  }
+  to {
+    transform: translateZ(0);
+  }
+}
+.animate__lightSpeedInRight {
+  animation-name: lightSpeedInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+@keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.animate__zoomInDown {
+  animation-name: zoomInDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+
+@keyframes swing {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  59% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  65% {
+    transform: rotate(-5deg);
+  }
+  70% {
+    transform: rotate(4deg);
+  }
+  75% {
+    transform: rotate(-4deg);
+  }
+  80% {
+    transform: rotate(3deg);
+  }
+  85% {
+    transform: rotate(-3deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+  95% {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.animate__swing {
+  transform-origin: bottom center;
+  animation-name: swing;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}

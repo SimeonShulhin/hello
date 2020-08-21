@@ -27,3 +27,16 @@
   font-style: italic;
   src: url(../fonts/FORMULACONDENSED-REGULAR.OTF);
 }
+@font-face {
+  font-family: 'Rude';
+  src: url(../fonts/Rude400.ttf);
+}
+@font-face {
+  font-family: 'Argesta';
+  src: url(../fonts/ArgestaText.otf);
+}
+@font-face {
+  font-family: 'Argesta';
+  font-weight: bold;
+  src: url(../fonts/ArgestaTextBold.otf);
+}

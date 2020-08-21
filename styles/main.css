@@ -15,6 +15,7 @@ svg {
   height: 5px;
   top: 25px;
   position: absolute;
+  transition: width 0.5s;
 }
 
 .site-navigation-item {
@@ -24,7 +25,7 @@ svg {
 }
 
 .site-navigation-item:hover svg {
-  animation: appear 0.5s forwards;
+  width: 100%;
 }
 
 a {
@@ -179,14 +180,3 @@ main {
 .to-be-continued {
   margin-top: 80px;
 }
-
-@keyframes appear {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
