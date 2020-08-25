@@ -18,7 +18,6 @@ main {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  width: 60%;
   margin: auto;
 }
 
@@ -156,4 +155,12 @@ p {
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
+}
+
+.circles-background {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(45, 211, 18, 0.2) 50px, transparent 0, transparent 0%), radial-gradient(rgba(45, 211, 18, 0.2) 50px, transparent 0, transparent 0%), #fff;
+  background-size: 220px 220px;
+  background-position: -47px 0px, 58px 111px;
 }
