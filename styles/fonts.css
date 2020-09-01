@@ -40,3 +40,12 @@
   font-weight: bold;
   src: url(../fonts/ArgestaTextBold.otf);
 }
+@font-face {
+  font-family: 'Value Sans Pro';
+  src: local('Value Sans Pro Medium'), local('Value-Sans-Pro-Medium'),
+      url('../fonts/ValueSansPro-Medium.woff2') format('woff2'),
+      url('../fonts/ValueSansPro-Medium.woff') format('woff'),
+      url('../fonts/ValueSansPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}

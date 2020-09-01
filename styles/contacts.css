@@ -7,13 +7,13 @@
 html {
   height: 100%;
 }
-body {
+#bodyContacts {
   margin: 0;
   height: 100%;
   background: repeating-linear-gradient(-60deg, rgba(45, 211, 18, 0.2) 0 35px, transparent 35px 55px);
 }
 
-main {
+#mainContacts {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -21,7 +21,8 @@ main {
   margin: auto;
 }
 
-h1 {
+.animate__lightSpeedInLeft,
+.animate__lightSpeedInRight {
   font: 11vw 'Rude';
   text-align: center;
 }
@@ -36,6 +37,7 @@ p {
 .cake {
   background: url('../assets/media/images/cake.png') center/contain no-repeat;
   height: 100%;
+  width: 60%;
 }
 
 .cake-wrapper {
@@ -86,6 +88,54 @@ p {
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
+}
+
+@keyframes lightSpeedInTop {
+  0% {
+    transform: translate3d(0, 200%, 0) skewX(30deg) rotate(180deg);
+    opacity: 0;
+  }
+  60% {
+    transform: skewX(-20deg) rotate(180deg);
+    opacity: 1;
+  }
+  80% {
+    transform: skewX(5deg) rotate(180deg);
+  }
+  to {
+    transform: translate3d(0, 0, 0) rotate(180deg);
+  }
+}
+.animate__lightSpeedInTop {
+  animation-name: lightSpeedInTop;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  writing-mode: vertical-lr;
+}
+
+@keyframes lightSpeedInBottom {
+  0% {
+    transform: translate3d(0, -200%, 0) skewX(30deg);
+    opacity: 0;
+  }
+  60% {
+    transform: skewX(-20deg);
+    opacity: 1;
+  }
+  80% {
+    transform: skewX(5deg);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__lightSpeedInBottom {
+  animation-name: lightSpeedInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  writing-mode: vertical-lr;
 }
 
 @keyframes zoomInDown {
