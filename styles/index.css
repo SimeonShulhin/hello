@@ -1,5 +1,4 @@
 @import url('fonts.css');
-@import url('contacts.css');
 
 html {
   scroll-behavior: smooth;
@@ -14,66 +13,13 @@ header {
   height: 5px;
   border: 1px solid red;
 }
-
-svg {
-  width: 0px;
-  height: 5px;
-  top: 25px;
-  position: absolute;
-  transition: width 0.5s;
-}
-
-.logo {
-  background: url('../assets/media/images/logo.png') center/cover no-repeat;
-  width: 130px;
-  height: 130px;
-}
-
-.site-navigation-item {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.site-navigation-item:hover svg {
+main {
   width: 100%;
 }
-
-a {
-  color: #2d2d2d;
-  text-decoration: none;
-}
-
-ul {
-  padding: 0;
-}
-ul li {
-  list-style-type: none;
-}
-
-h1 {
-  font: 13.3vh 'Value Sans Pro';
-  margin: 0;
-  text-align: center;
-}
-h2 {
-  font-size: 35px;
-  margin: 0;
-}
-p {
-  margin: 0;
-  font-size: 20px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Value Sans Pro';
-}
-
 #invitation {
+  width: 100%;
   height: 100vh;
-  background: repeating-linear-gradient(-60deg, rgba(45, 211, 18, 0.2) 0 35px, transparent 35px 55px);
+  background: repeating-linear-gradient(-60deg, rgba(45, 211, 18, 0.2) 0 35px, #fff 35px 55px);
 }
 .invitation-main {
   height: 67vh;
@@ -81,20 +27,7 @@ body {
   margin: auto;
   display: flex;
   justify-content: space-between;
-}
-#invitation header {
-  height: 18.5vh;
-  width: 77vw;
-  margin: auto;
-}
-#siteNavigation {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  font: 24px 'Value Sans Pro';
+  position: relative;
 }
 
 #order {
@@ -129,6 +62,7 @@ body {
   width: 272px;
   height: 77px;
   background: rgba(45, 211, 18, 0.66);
+  box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   line-height: 85px;
   font-size: 51px;
@@ -136,6 +70,7 @@ body {
 }
 .order-button:hover {
   background: lightgreen;
+  box-shadow: 0 0 black;
 }
 .order-button a {
   color: #fff;
@@ -149,88 +84,4 @@ body {
   height: 46vh;
   background: url('../assets/media/images/SC-custom-cakes.png') center/contain no-repeat;
   filter: drop-shadow(16px 0px 28px rgba(0, 0, 0, 0.25));
-}
-
-footer {
-  background-color: rgba(45, 211, 18, 0.4);
-}
-footer section {
-  width: 77vw;
-  margin: auto;
-  padding-bottom: 100px;
-}
-.footer-links {
-  display: grid;
-  grid: 1fr / 1fr 1fr;
-  padding: 29px 0 37px;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-.footer-links li {
-  padding-bottom: 15px;
-}
-
-.footer-links li a {
-  color: #fff;
-}
-.footer-links li a:hover {
-  color: #2d2d2d;
-}
-
-.footer-icons {
-  width: 334px;
-  display: flex;
-  justify-content: space-between;
-}
-.footer-icons li a {
-  width: 50px;
-  height: 50px;
-  display: block;
-}
-.insta-icon {
-  background: url('../assets/media/images/entypo-social_instagram-with-circle.png') center/contain no-repeat;
-}
-.twit-icon {
-  background: url('../assets/media/images/Vector.png') center/contain no-repeat;
-}
-.face-icon {
-  background: url('../assets/media/images/fc.png') center/contain no-repeat;
-}
-.pint-icon {
-  background: url('../assets/media/images/pint.png') center/contain no-repeat;
-}
-
-.animate__pulse:hover {
-  animation: pulse 1s ease-out infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scaleX(1);
-  }
-  50% {
-    transform: scale3d(1.15, 1.15, 1.15);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-
-.go-up {
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  opacity: 0.4;
-  background-color: green;
-  text-align: center;
-  line-height: 50px;
-}
-.go-up a {
-  color: #fff;
-  font-size: 26px;
-}
-.go-up:hover {
-  opacity: 1;
 }

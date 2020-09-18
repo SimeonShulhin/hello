@@ -1,0 +1,88 @@
+footer {
+  background-color: rgba(45, 211, 18, 0.4);
+}
+footer section {
+  width: 77vw;
+  margin: auto;
+  padding-bottom: 100px;
+}
+.footer-links {
+  display: grid;
+  grid: 1fr / 1fr 1fr;
+  padding: 29px 0 37px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.footer-links li {
+  padding-bottom: 15px;
+}
+
+.footer-links li a {
+  color: #fff;
+}
+.footer-links li a:hover {
+  color: #2d2d2d;
+}
+
+.footer-icons {
+  width: 334px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-icons li a {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+.insta-icon {
+  background: url('../assets/media/images/entypo-social_instagram-with-circle.png') center/contain no-repeat;
+}
+.twit-icon {
+  background: url('../assets/media/images/Vector.png') center/contain no-repeat;
+}
+.face-icon {
+  background: url('../assets/media/images/fc.png') center/contain no-repeat;
+}
+.pint-icon {
+  background: url('../assets/media/images/pint.png') center/contain no-repeat;
+}
+
+.animate__pulse:hover {
+  animation: pulse 1s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.go-up {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.4;
+  background-color: green;
+  text-align: center;
+  line-height: 50px;
+  transition: opacity 0.5s linear;
+}
+.go-up a {
+  color: #fff;
+  font-size: 26px;
+}
+.go-up:hover {
+  opacity: 1;
+}
+
+.opacity-0.go-up {
+  opacity: 0;
+}

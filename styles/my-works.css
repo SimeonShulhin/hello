@@ -1,0 +1,43 @@
+body {
+  background: rgba(45, 211, 18, 0.19);
+}
+
+h1 {
+  text-align: left;
+  letter-spacing: 2vw;
+}
+
+h1 span {
+  opacity: 0;
+}
+
+h1 span:first-of-type {
+  animation: appearence 0.5s linear forwards;
+}
+h1 span:nth-of-type(2) {
+  animation: appearence 0.5s 0.5s linear forwards;
+}
+h1 span:nth-of-type(3) {
+  animation: appearence 0.5s 1s linear forwards;
+}
+h1 span:nth-of-type(4) {
+  animation: appearence 0.5s 1.5s linear forwards;
+}
+h1 span:nth-of-type(5) {
+  animation: appearence 0.5s 2s linear forwards;
+}
+h1 span:nth-of-type(6) {
+  animation: appearence 0.5s 2.5s linear forwards;
+}
+h1 span:nth-of-type(7) {
+  animation: appearence 0.5s 3s linear forwards;
+}
+
+@keyframes appearence {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

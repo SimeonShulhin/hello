@@ -1,0 +1,24 @@
+h1 {
+  font: 13.3vh 'Value Sans Pro';
+  margin: 0;
+  text-align: center;
+}
+h2 {
+  font-size: 35px;
+  margin: 0;
+}
+p {
+  margin: 0;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Value Sans Pro';
+}
+
+main {
+  width: 77vw;
+  margin: auto;
+}
