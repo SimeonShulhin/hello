@@ -6,3 +6,63 @@ h1 {
   text-align: left;
   letter-spacing: 2vw;
 }
+
+.h1-nail {
+  text-align: left;
+  letter-spacing: 2vw;
+  font: 13.3vh 'Value Sans Pro';
+  display: inline-block;
+}
+.animate__hinge {
+  transform: rotate(90deg) translate(0px, -10.4vh);
+  transform-origin: left top;
+  animation: hinge 3s forwards;
+}
+
+@keyframes hinge {
+  0% {
+    transform: rotate(100deg) translate(0px, -10.4vh);
+  }
+  5%,
+  20% {
+    transform: rotate(80deg) translate(0px, -10.4vh);
+  }
+  10% {
+    transform: rotate(90deg) translate(0px, -10.4vh);
+  }
+  15%,
+  30% {
+    transform: rotate(70deg) translate(0px, -10.4vh);
+  }
+  25%,
+  40% {
+    transform: rotate(60deg) translate(0px, -10.4vh);
+  }
+  35%,
+  50% {
+    transform: rotate(50deg) translate(0px, -10.4vh);
+  }
+  45%,
+  60% {
+    transform: rotate(40deg) translate(0px, -10.4vh);
+  }
+  55%,
+  70% {
+    transform: rotate(30deg) translate(0px, -10.4vh);
+  }
+  65%,
+  80% {
+    transform: rotate(20deg) translate(0px, -10.4vh);
+  }
+  75%,
+  90% {
+    transform: rotate(10deg) translate(0px, -10.4vh);
+  }
+  85%,
+  95% {
+    transform: rotate(0deg) translate(0px, -10.4vh);
+  }
+  100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+}
