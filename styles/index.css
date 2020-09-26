@@ -1,4 +1,4 @@
-@import url('fonts.css');
+@import url("fonts.css");
 
 html {
   scroll-behavior: smooth;
@@ -19,7 +19,11 @@ main {
 #invitation {
   width: 100%;
   height: 100vh;
-  background: repeating-linear-gradient(-60deg, rgba(45, 211, 18, 0.2) 0 35px, #fff 35px 55px);
+  background: repeating-linear-gradient(
+    -60deg,
+    rgba(45, 211, 18, 0.2) 0 35px,
+    #fff 35px 55px
+  );
 }
 .invitation-main {
   height: 67vh;
@@ -29,17 +33,31 @@ main {
   justify-content: space-between;
   position: relative;
 }
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .invitation-main h1 {
+    display: none;
+  }
+  .invitation-main .cake {
+    width: 100%;
+  }
+}
 
 #order {
   height: 100vh;
 }
 .circle-gradient {
-  background: radial-gradient(rgba(45, 211, 18, 0.2) 50px, transparent 0, transparent 0%), radial-gradient(rgba(45, 211, 18, 0.2) 50px, transparent 0, transparent 0%), #fff;
+  background: radial-gradient(
+      rgba(45, 211, 18, 0.2) 50px,
+      transparent 0,
+      transparent 0%
+    ),
+    radial-gradient(rgba(45, 211, 18, 0.2) 50px, transparent 0, transparent 0%),
+    #fff;
   background-size: 220px 220px;
   background-position: -111px 0px, -6px 109px;
 }
 .order-wrapper {
-  width: 77vw;
+  width: 85vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -52,10 +70,21 @@ main {
   font-size: 9vh;
   margin: 50px 0 0;
 }
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  #order h1 {
+    font-size: 6.7vh;
+  }
+} 
 #order h2 {
   font-size: 4vh;
   font-weight: 500;
   width: 63%;
+}
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  #order h2 {
+    font-size: 3.6vh;
+    width: 100%;
+  }
 }
 
 .order-button {
@@ -82,6 +111,13 @@ main {
 .cake-img {
   width: 40vw;
   height: 46vh;
-  background: url('../assets/media/images/SC-custom-cakes.png') center/contain no-repeat;
+  background: url("../assets/media/images/SC-custom-cakes.png") center/contain
+    no-repeat;
   filter: drop-shadow(16px 0px 28px rgba(0, 0, 0, 0.25));
+}
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .cake-img {
+    height: 39vh;
+    width: 46vh;
+  }
 }

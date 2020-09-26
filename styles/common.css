@@ -22,3 +22,10 @@ main {
   width: 77vw;
   margin: auto;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .w-85-t{
+    width: 85vw;
+  }
+}
