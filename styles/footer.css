@@ -84,6 +84,7 @@ footer section {
 .go-up a {
   color: #fff;
   font-size: 26px;
+  text-decoration: none;
 }
 .go-up:hover {
   opacity: 1;

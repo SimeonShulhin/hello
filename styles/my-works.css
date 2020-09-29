@@ -1,44 +1,120 @@
+.circle-gradient {
+  background: radial-gradient(
+      rgba(45, 211, 18, 0.2) 50px,
+      transparent 0,
+      transparent 0%
+    ),
+    radial-gradient(rgba(45, 211, 18, 0.2) 50px, transparent 0, transparent 0%),
+    #fff;
+  background-size: 220px 220px;
+  background-position: -111px 0px, -6px 109px;
+}
+
 body {
-  background: rgba(45, 211, 18, 0.19);
+  background-color: rgba(45, 211, 18, 0.19);
 }
 
-h1 {
-  text-align: left;
-  letter-spacing: 2vw;
+main {
+  height: 100vh;
+  width: 100%;
+  overflow-x: scroll;
 }
-
-h1 span {
-  opacity: 0;
-}
-
-h1 span:nth-of-type(2) {
-  animation-delay: 0.5s;
-}
-h1 span:nth-of-type(3) {
-  animation-delay: 1s;
-}
-h1 span:nth-of-type(4) {
-  animation-delay: 1.5s;
-}
-h1 span:nth-of-type(5) {
-  animation-delay: 2s;
-}
-h1 span:nth-of-type(6) {
-  animation-delay: 2.5s;
-}
-h1 span:nth-of-type(7) {
-  animation-delay: 3s;
-}
-
-.animate__appearence span {
-  animation: appearence 0.5s linear forwards;
-}
-
-@keyframes appearence {
-  from {
-    opacity: 0;
+@media only screen and (max-width: 480px) {
+  main {
+    height: auto;
+    /* margin: 20px 0; */
   }
-  to {
-    opacity: 1;
+}
+
+.grid-container {
+  width: 2880px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas:
+    ". image-1 image-1 image-1 image-1 . . . . . . . . . . . . . . image-8 image-8 image-8 image-8 ."
+    ". image-1 image-1 image-1 image-1 . image-4 image-4 image-4 image-4 image-4 image-4 . . image-6 image-6 image-6 image-6 . image-8 image-8 image-8 image-8 ."
+    ". image-1 image-1 image-1 image-1 . image-4 image-4 image-4 image-4 image-4 image-4 . . image-6 image-6 image-6 image-6 . image-8 image-8 image-8 image-8 ."
+    ". . . . . . image-4 image-4 image-4 image-4 image-4 image-4 . . image-6 image-6 image-6 image-6 . image-8 image-8 image-8 image-8 ."
+    ". . image-2 image-2 . . . . . . . . . . image-6 image-6 image-6 image-6 . . . . . ."
+    ". . image-2 image-2 . . image-5 image-5 image-5 image-5 . . . . . . . . . . image-9 image-9 . ."
+    ". . image-2 image-2 . . image-5 image-5 image-5 image-5 . . image-7 image-7 image-7 image-7 image-7 image-7 . . image-9 image-9 . ."
+    ". . . . . . image-5 image-5 image-5 image-5 . . image-7 image-7 image-7 image-7 image-7 image-7 . . image-9 image-9 . ."
+    ". image-3 image-3 image-3 image-3 . image-5 image-5 image-5 image-5 . . image-7 image-7 image-7 image-7 image-7 image-7 . . image-9 image-9 . ."
+    ". image-3 image-3 image-3 image-3 . . . . . . . image-7 image-7 image-7 image-7 image-7 image-7 . . image-9 image-9 . .";
+}
+@media only screen and (max-width: 480px) {
+  .grid-container {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
   }
+  .image-container {
+    width: 93vw;
+    /* height: auto; */
+    margin: 10px auto;
+  }
+}
+
+.image-1 {
+  grid-area: image-1;
+}
+.image-2 {
+  grid-area: image-2;
+}
+.image-3 {
+  grid-area: image-3;
+}
+.image-4 {
+  grid-area: image-4;
+}
+.image-5 {
+  grid-area: image-5;
+}
+.image-6 {
+  grid-area: image-6;
+}
+.image-7 {
+  grid-area: image-7;
+}
+.image-8 {
+  grid-area: image-8;
+}
+.image-9 {
+  grid-area: image-9;
+}
+
+.image-container:hover {
+  z-index: 1;
+}
+.image-container:hover img {
+  width: auto;
+  height: auto;
+}
+
+.grid-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+footer {
+  /* background-color: transparent; */
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }

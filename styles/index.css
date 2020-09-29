@@ -1,11 +1,9 @@
 @import url("fonts.css");
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 header {
-  /* position: fixed; */
+  /* position: relative; */
 }
 
 .line {
